@@ -1,13 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 p {
@@ -19,7 +35,7 @@ a,
   transition: all 300ms ease;
 }
 
-/* nav */
+/* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -27,16 +43,17 @@ nav,
 }
 
 nav {
-  align-items: center;
   justify-content: space-around;
-  height: 15dvh;
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-  list-style: none;
   gap: 2rem;
+  list-style: none;
   font-size: 1.5rem;
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -46,17 +63,23 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-size: 2rem;
 }
+.logo img {
+  height: 5rem;
+  width: fit-content;
+}
 
 .logo:hover {
   cursor: default;
 }
+
+/* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
@@ -66,14 +89,16 @@ a:hover {
   position: relative;
   display: inline-block;
 }
+
 .hamburger-icon {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 24px;
   width: 30px;
-  justify-content: space-between;
   cursor: pointer;
 }
+
 .hamburger-icon span {
   width: 100%;
   height: 2px;
@@ -89,17 +114,19 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
+
 .menu-links a {
   display: block;
-  text-align: center;
   padding: 10px;
+  text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
+
 .menu-links li {
   list-style: none;
 }
@@ -111,9 +138,11 @@ a:hover {
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
+
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
@@ -121,12 +150,16 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 .hamburger-icon span:first-child {
   opacity: 1;
 }
+
 .hamburger-icon span:first-child {
   transform: none;
 }
+
+/* SECTIONS */
 
 section {
   padding-top: 4vh;
@@ -139,10 +172,13 @@ section {
 .section-container {
   display: flex;
 }
+
+/* PROFILE SECTION */
+
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 15rem;
   height: 80vh;
 }
 
@@ -154,8 +190,8 @@ section {
 }
 
 .section__text {
-  text-align: center;
   align-self: center;
+  text-align: center;
 }
 
 .section__text p {
@@ -165,33 +201,39 @@ section {
 .section__text__p1 {
   text-align: center;
 }
-.section__text__p1 {
+
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 .title {
-  text-align: center;
   font-size: 3rem;
+  text-align: center;
 }
 
-#social-container {
-  margin-top: 1rem;
-  gap: 2rem;
+#socials-container {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
 }
+
+/* ICONS */
 
 .icon {
   cursor: pointer;
-  scale: 2;
+  height: 2rem;
 }
+
+/* BUTTONS */
 
 .btn-container {
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
 }
+
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -202,11 +244,16 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border-color: rgb(53, 53, 53);
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
-.btn-color-1,
+
+.btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -225,4 +272,176 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  line-height: 1.75rem;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* Portfolio SECTION */
+
+#portfolio {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
