@@ -15,7 +15,7 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">
-        <img src="./assets/KUCING OYEN.Png" alt="oyen" />
+        <i class="fa-brands fa-mailchimp" style="font-size: 50px"></i>
       </div>
       <div>
         <ul class="nav-links">
@@ -27,7 +27,9 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo"><img src="./assets/KUCING OYEN.Png" alt="oyen" /></div>
+      <div class="logo">
+        <i class="fa-brands fa-mailchimp" style="font-size: 50px"></i>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -60,18 +62,14 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
+          <i
+            class="fa-brands fa-linkedin"
             onclick="location.href='https://linkedin.com/in/antonio-arden'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
+          ></i>
+          <i
+            class="fa-brands fa-github"
             onclick="location.href='https://github.com/antonioarden'"
-          />
+          ></i>
         </div>
       </div>
       <div class="section__pic-container">
@@ -116,12 +114,10 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+      <i
+        class="arrow fa-solid fa-angles-down"
         onclick="location.href='./#experience'"
-      />
+      ></i>
     </section>
     <!-- experience -->
     <section id="experience">
@@ -251,20 +247,18 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+      <i
+        class="arrow fa-solid fa-angles-down"
         onclick="location.href='./#portfolio'"
-      />
+      ></i>
     </section>
     <!-- Portfolio -->
     <section id="portfolio">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Portfolio</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+        <div class="about-containers folder">
+          <div class="portfolio-container color-container">
             <div class="article-container">
               <img
                 src="./assets/xxi redesign.png"
@@ -274,6 +268,9 @@
             </div>
             <h2 class="experience-sub-title project-title">Figma Project #1</h2>
             <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="xxiRedesign()"
@@ -282,7 +279,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="portfolio-container color-container">
             <div class="article-container">
               <img
                 src="./assets/snapjobs.png"
@@ -292,12 +289,15 @@
             </div>
             <h2 class="experience-sub-title project-title">Figma Project #2</h2>
             <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
               <button class="btn btn-color-2 project-btn" onclick="snapJobs()">
                 Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="portfolio-container color-container">
             <div class="article-container">
               <img
                 src="./assets/jucyjooz.png"
@@ -307,19 +307,83 @@
             </div>
             <h2 class="experience-sub-title project-title">Figma Project #3</h2>
             <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
               <button class="btn btn-color-2 project-btn" onclick="jucyJooz()">
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/empty.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="xxiRedesign()"
+              >
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/empty.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="xxiRedesign()"
+              >
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/empty.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn disabled" disabled>
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="xxiRedesign()"
+              >
                 Demo
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+      <i
+        class="arrow fa-solid fa-angles-down"
         onclick="location.href='./#contact'"
-      />
+      ></i>
     </section>
     <!-- contact -->
     <section id="contact">
@@ -327,19 +391,16 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <i class="fa-solid fa-envelope"></i>
+          <p>
+            <a href="mailto:antonioarden99@gmail.com">example@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <i
+            class="fa-brands fa-linkedin"
+            onclick="location.href='https://linkedin.com/in/antonio-arden'"
+          ></i>
           <p>
             <a href="https://www.linkedin.com/in/antonio-arden">LinkedIn</a>
           </p>
