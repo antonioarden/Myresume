@@ -20,10 +20,11 @@ var links = [
   "https://www.figma.com/proto/jL6hXhuHJPsGWsKZJn1H6A/XXI-Redesign?page-id=0%3A1&type=design&node-id=132-436&viewport=179%2C1801%2C0.25&t=7TNEm3sWXzNN5Ztd-1&scaling=scale-down&starting-point-node-id=120%3A204&show-proto-sidebar=1",
   "https://www.figma.com/proto/3cuJbxPEN9u3ktgq7guMld/JucyJooz?page-id=0%3A1&type=design&node-id=5-188&viewport=819%2C328%2C0.09&t=haHyZLP5hDxI2A9d-1&scaling=contain&starting-point-node-id=5%3A188&show-proto-sidebar=1",
   "https://antonioarden.github.io/Myresume/",
+  "https://github.com/antonioarden/Myresume",
 ];
 
-function linkProject(index) {
-  window.open(links[index]);
+function linkProject(i) {
+  window.open(links[i]);
 }
 
 var modal1 = document.getElementById("figmaModal");
