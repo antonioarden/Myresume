@@ -78,7 +78,7 @@
     </section>
     <!-- about -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get to know more</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -121,7 +121,7 @@
     </section>
     <!-- experience -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section__text__p1">Check my</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -254,130 +254,44 @@
     </section>
     <!-- Portfolio -->
     <section id="portfolio">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Check my recent</p>
       <h1 class="title">Portfolio</h1>
       <div class="experience-details-container">
-        <div class="about-containers folder">
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/xxi redesign.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        <div class="about-containers">
+          <article>
+            <div class="portfolio-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/figma.jpg"
+                  alt="figma project"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Figma Project</h2>
+              <div class="btn-container">
+                <button id="figma-btn" class="btn btn-color-2 project-btn">
+                  Open
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="xxiRedesign()"
-              >
-                Demo
-              </button>
+            <div class="portfolio-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/i-love-coding-dark-3840x2160-16016.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Frontend Project
+              </h2>
+              <div class="btn-container">
+                <button id="code-btn" class="btn btn-color-2 project-btn">
+                  Open
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/snapjobs.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Figma Project #2</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="snapJobs()">
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/jucyjooz.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Figma Project #3</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="jucyJooz()">
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/empty.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="xxiRedesign()"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/empty.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="xxiRedesign()"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="portfolio-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/empty.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Figma Project #1</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn disabled" disabled>
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="xxiRedesign()"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
       <i
@@ -385,6 +299,60 @@
         onclick="location.href='./#contact'"
       ></i>
     </section>
+    <!-- Figma Modal Popup-->
+    <div id="figmaModal" class="modal figmaProject">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span data-modal="myModal" class="close">&times;</span>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/snapjobs.png" alt="Card Image 1" />
+            <div class="card-description">
+              <p id="card-text">SnapJobs</p>
+            </div>
+            <div class="card-button">
+              <button onclick="linkProject(0)">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/jucyjooz.png" alt="Card Image 2" />
+            <div class="card-description">
+              <p id="card-text">Jucyjooz</p>
+            </div>
+            <div class="card-button">
+              <button onclick="linkProject(2)">Open</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/xxi redesign.png" alt="Card Image 3" />
+            <div class="card-description">
+              <p id="card-text">XXI Redesign</p>
+            </div>
+            <div class="card-button">
+              <button onclick="linkProject(1)">Open</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Code Modal Popup-->
+    <div id="codeModal" class="modal codeProject">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span data-modal="myModal2" class="close">&times;</span>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/cv.png" alt="Card Image 1" />
+            <div class="card-description">
+              <p id="card-text">My Resume</p>
+            </div>
+            <div class="card-button">
+              <button onclick="linkProject(0)">Open</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- contact -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -393,7 +361,9 @@
         <div class="contact-info-container">
           <i class="fa-solid fa-envelope"></i>
           <p>
-            <a href="mailto:antonioarden99@gmail.com">example@gmail.com</a>
+            <a href="mailto:antonioarden99@gmail.com"
+              >antonioarden99@gmail.com</a
+            >
           </p>
         </div>
         <div class="contact-info-container">
@@ -407,6 +377,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">

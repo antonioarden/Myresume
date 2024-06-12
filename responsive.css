@@ -1,13 +1,16 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+  }
+
+  #contact {
+    height: 83vh;
   }
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
-  #projects {
+
+  .experience-details-container {
     height: fit-content;
   }
 }
@@ -63,6 +66,10 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+  }
+
+  .arrow {
+    display: none;
   }
   .about-containers,
   .contact-info-upper-container,

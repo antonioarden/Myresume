@@ -10,7 +10,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
   background: #0f2027; /* fallback for old browsers */
@@ -167,8 +169,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 5vh;
+  height: 95vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -184,7 +186,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 15rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -343,11 +344,12 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
 }
 
 .article-container {
   display: flex;
-  text-align: initial;
+  /* text-align: initial; */
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -358,7 +360,7 @@ article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
 article .icon {
@@ -376,18 +378,11 @@ article .icon {
   background-color: #ccc;
   color: #666;
 }
-/* .details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: rgb(92 115 132 / 28%);
-  backdrop-filter: blur(5px);
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  text-align: center;
-} */
+
 .portfolio-container {
+  display: flex;
   padding: 1rem;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
   border-radius: 2rem;
   text-align: center;
@@ -453,6 +448,116 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+/* MODAL */
+#card-text {
+  color: #0f2027;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: rgb(92 115 132 / 28%);
+  backdrop-filter: blur(5px);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 95%;
+  max-width: 1200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow-x: auto;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.589);
+  backdrop-filter: blur(1rem);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  flex: 0 0 auto; /* Make cards not shrink and maintain width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.card-description {
+  margin: 10px 0;
+}
+
+.card-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4c92dc;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card-button button:hover {
+  background-color: #0056b3;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
 }
 
 /* FOOTER SECTION */
