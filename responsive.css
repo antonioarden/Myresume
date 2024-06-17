@@ -1,10 +1,9 @@
-@media screen and (max-width: 1400) {
+@media (min-width: 1201px) and (max-width: 1400px) {
   #profile {
     height: 83vh;
   }
-
-  #contact {
-    height: 83vh;
+  #about {
+    margin-bottom: 20px;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -13,9 +12,12 @@
   .experience-details-container {
     height: fit-content;
   }
+  #hamburger-nav {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
@@ -30,7 +32,10 @@
   .section-container {
     display: block;
   }
-  .arrow {
+  #about {
+    margin-top: 160px;
+  }
+  #next-arrow {
     display: none;
   }
   section,
@@ -51,36 +56,107 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 767px) {
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: 160px;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
-  }
-
-  .arrow {
+    margin-bottom: 1rem;
     display: none;
   }
+
+  #next-arrow {
+    display: none;
+  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-containers article {
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-details-container {
+    position: relative;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 160px;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    display: none;
+  }
+
+  #next-arrow {
+    display: none;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .about-containers article {
+    width: fit-content;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 120px;
+    align-items: center;
   }
+
   .contact-info-container {
     margin: 0;
   }
