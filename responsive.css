@@ -1,23 +1,17 @@
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1201px) and (max-width: 1400) {
   #profile {
     height: 83vh;
   }
-  #about {
-    margin-bottom: 20px;
+
+  #contact {
+    height: 83vh;
   }
   .about-containers {
     flex-wrap: wrap;
   }
-
-  .experience-details-container {
-    height: fit-content;
-  }
-  #hamburger-nav {
-    display: none;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
@@ -28,14 +22,18 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  #profile {
+    margin-bottom: 160px;
+  }
   #profile,
   .section-container {
     display: block;
   }
-  #about {
-    margin-top: 160px;
+  #portfolio .about-containers {
+    justify-content: center;
   }
-  #next-arrow {
+
+  #arrow {
     display: none;
   }
   section,
@@ -44,6 +42,9 @@
   }
   section {
     margin: 0 5%;
+  }
+  .about-containers .portfolio-list {
+    display: flex;
   }
   .section__pic-container {
     width: 275px;
@@ -54,41 +55,55 @@
   .about-containers {
     margin-top: 0;
   }
+  .experience-details-container .about-containers .portfolio-list {
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  #portfolio .about-containers {
+    justify-content: center;
+  }
+  .about-containers .portfolio-list .portfolio-container {
+    width: fit-content;
+    margin: 1.5rem 0;
+  }
+
+  footer nav {
+    display: none;
+  }
+  #arrow {
+    display: none;
+  }
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 160px;
+    height: fit-content;
+  }
+  #arrow {
+    display: none;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
-    margin-bottom: 1rem;
     display: none;
   }
-
-  #next-arrow {
-    display: none;
+  .about-containers .portfolio-list {
+    display: flex;
   }
 
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
-    justify-content: center;
   }
-
-  .about-containers article {
+  .about-containers .portfolio-list .portfolio-container {
     width: fit-content;
-    flex-direction: column;
-    align-items: center;
+    margin: 1.5rem 0;
   }
   .contact-info-container {
     margin: 0;
@@ -99,9 +114,10 @@
   }
   .experience-details-container {
     position: relative;
+    align-items: center;
   }
-  .experience-sub-title {
-    font-size: 1.25rem;
+  .about-containers .portfolio-list {
+    display: block;
   }
   .logo {
     font-size: 1.5rem;
@@ -119,44 +135,48 @@
   .section__text__p2 {
     font-size: 1.25rem;
   }
-  .title {
-    font-size: 2rem;
-  }
+
   .text-container {
     text-align: justify;
+  }
+  .article-container article .icon {
+    height: 50px;
+    width: 50px;
   }
 }
 
-@media (max-width: 480px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 160px;
+@media screen and (max-width: 640px) {
+  #contact,
+  footer {
+    height: 40vh;
   }
-
+  #profile {
+    height: fit-content;
+  }
+  #arrow {
+    display: none;
+  }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
     display: none;
   }
 
-  #next-arrow {
-    display: none;
+  .about-containers .portfolio-list {
+    display: block;
   }
 
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  .about-containers article {
-    width: fit-content;
-    flex-direction: column;
-    align-items: center;
   }
 
+  .about-containers .portfolio-list .portfolio-container {
+    width: fit-content;
+    margin: 1.5rem 0;
+  }
   .contact-info-container {
     margin: 0;
   }
@@ -166,9 +186,7 @@
   }
   .experience-details-container {
     position: relative;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
+    align-items: center;
   }
   .logo {
     font-size: 1.5rem;
@@ -186,10 +204,12 @@
   .section__text__p2 {
     font-size: 1.25rem;
   }
-  .title {
-    font-size: 2rem;
-  }
+
   .text-container {
     text-align: justify;
+  }
+  .article-container article .icon {
+    height: 50px;
+    width: 50px;
   }
 }

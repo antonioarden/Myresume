@@ -51,10 +51,7 @@
         <h1 class="title">Antonio Arden</h1>
         <p class="section__text__p2">Junior Frontend Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="linkProject(5)">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -115,8 +112,8 @@
         </div>
       </div>
       <i
-        id="next-arrow"
-        class="arrow fa-solid fa-angles-down"
+        id="arrow"
+        class="fa-solid fa-caret-down"
         onclick="location.href='./#experience'"
       ></i>
     </section>
@@ -130,42 +127,66 @@
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
-                <i class="fa-brands fa-html5"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>HTML</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-css3-alt"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>CSS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-react"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>React.js</h3>
-                  <p>Beginner level</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-react"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Native</h3>
-                  <p>Beginner level</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-bootstrap"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Bootstrap</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-solid fa-code"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Material UI</h3>
                   <p>Intermediate</p>
@@ -174,31 +195,47 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Others & Tools</h2>
+            <h2 class="experience-sub-title">Backend Development & tools</h2>
             <div class="article-container">
               <article>
-                <i class="fa-solid fa-database"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>PostgreSQL</h3>
-                  <p>Beginner level</p>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-node-js"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Beginner level</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-solid fa-code"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Rest API</h3>
-                  <p>Beginner level</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <i class="fa-brands fa-figma"></i>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
                 <div>
                   <h3>Figma</h3>
                   <p>Intermediate</p>
@@ -209,8 +246,8 @@
         </div>
       </div>
       <i
-        id="next-arrow"
-        class="arrow fa-solid fa-angles-down"
+        id="arrow"
+        class="fa-solid fa-caret-down"
         onclick="location.href='./#portfolio'"
       ></i>
     </section>
@@ -220,7 +257,7 @@
       <h1 class="title">Portfolio</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <article>
+          <div class="portfolio-list">
             <div class="portfolio-container color-container">
               <div class="article-container">
                 <img
@@ -253,12 +290,11 @@
                 </button>
               </div>
             </div>
-          </article>
-        </div>
+          </div>
       </div>
       <i
-        id="next-arrow"
-        class="arrow fa-solid fa-angles-down"
+        id="arrow"
+        class="fa-solid fa-caret-down"
         onclick="location.href='./#contact'"
       ></i>
     </section>

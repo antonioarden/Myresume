@@ -21,6 +21,7 @@ var links = [
   "https://www.figma.com/proto/3cuJbxPEN9u3ktgq7guMld/JucyJooz?page-id=0%3A1&type=design&node-id=5-188&viewport=819%2C328%2C0.09&t=haHyZLP5hDxI2A9d-1&scaling=contain&starting-point-node-id=5%3A188&show-proto-sidebar=1",
   "https://antonioarden.github.io/Myresume/",
   "https://github.com/antonioarden/Myresume",
+  "https://drive.google.com/file/d/1AghYhUfbGl460ZoEfmm3bBLKjCKNror_/view?usp=sharing",
 ];
 
 function linkProject(i) {

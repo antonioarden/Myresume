@@ -225,6 +225,10 @@ section {
   gap: 1rem;
 }
 
+#socials-container i {
+  cursor: pointer;
+}
+
 /* ICONS */
 
 .icon {
@@ -293,7 +297,8 @@ section {
 }
 
 .about-containers,
-.about-details-container {
+.about-details-container,
+.portfolio-list {
   display: flex;
 }
 
@@ -301,7 +306,7 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
+#arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
@@ -349,7 +354,6 @@ section {
 
 .article-container {
   display: flex;
-  /* text-align: initial; */
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -371,6 +375,10 @@ article .icon {
 
 #portfolio {
   position: relative;
+}
+
+.about-containers .portfolio-list {
+  gap: 2rem;
 }
 
 .btn-container .disabled {
