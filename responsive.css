@@ -1,4 +1,4 @@
-@media (min-width: 1201px) and (max-width: 1400) {
+@media screen and (max-width: 1400) {
   #profile {
     height: 83vh;
   }
@@ -6,8 +6,13 @@
   #contact {
     height: 83vh;
   }
-  .about-containers {
-    flex-wrap: wrap;
+
+  #portfolio .about-containers {
+    justify-content: center;
+  }
+
+  body.openedmodal {
+    overflow: hidden;
   }
 }
 
@@ -58,6 +63,12 @@
   .experience-details-container .about-containers .portfolio-list {
     gap: 1rem;
     justify-content: space-between;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
   }
 }
 
@@ -143,6 +154,12 @@
     height: 50px;
     width: 50px;
   }
+
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -211,5 +228,10 @@
   .article-container article .icon {
     height: 50px;
     width: 50px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    overflow-x: hidden;
   }
 }

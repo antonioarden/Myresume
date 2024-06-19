@@ -34,17 +34,21 @@ var span1 = document.querySelector(".close[data-modal='myModal']");
 
 btn1.onclick = function () {
   modal1.style.display = "block";
+  document.body.classList.add("openedModal");
 };
 
 span1.onclick = function () {
   modal1.style.display = "none";
+  document.body.classList.remove("openedModal");
 };
 
 window.onclick = function (event) {
   if (event.target === modal1) {
     modal1.style.display = "none";
+    document.body.classList.remove("openedModal");
   } else if (event.target === modal2) {
     modal2.style.display = "none";
+    document.body.classList.remove("openedModal");
   }
 };
 
@@ -54,8 +58,10 @@ var span2 = document.querySelector(".close[data-modal='myModal2']");
 
 btn2.onclick = function () {
   modal2.style.display = "block";
+  document.body.classList.add("openedModal");
 };
 
 span2.onclick = function () {
   modal2.style.display = "none";
+  document.body.classList.remove("openedModal");
 };
